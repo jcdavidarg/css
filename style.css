@@ -1,0 +1,19 @@
+body {
+  color: red;
+  background-color: grey;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  background-color: aquamarine;
+  /* display: inline; */
+  width: 150px;
+}
+
+div p {
+  color: blue;
+  background-color: azure;
+  display: inline-block;
+  width: 150px;
+  font-family: "Times New Roman", Times, serif;
+}
