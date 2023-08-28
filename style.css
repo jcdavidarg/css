@@ -1,43 +1,52 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); */
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 @font-face {
   font-family: "Pacifico";
   src: url("./fonts/Pacifico-Regular.ttf");
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  color: #000000;
+  font-family: "Tulpen One", cursive;
+  background-color: grey;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+header,
+footer {
   color: rgb(88, 175, 204);
-  font-size: 28px;
-  display: flex;
-  align-items: flex-start;
+  background-color: white;
 }
 
-.logo {
-  width: 60px;
+ul,
+ol {
+  list-style-type: none;
 }
 
-.a__logo {
-  display: initial;
+p {
+  color: red;
+  background-color: aquamarine;
+  font-size: 2.5em;
+  width: 150px;
 }
 
-li {
-  list-style: none;
-}
-
-body {
-  background-color: grey;
-  font-family: "Tulpen One", cursive;
-  font-size: 25px;
-}
-
-.main__header {
-  width: 100vw;
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: lightblue;
 }
 
 .header__nav {
@@ -45,7 +54,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 10px 20px;
-  background-color: white;
+}
+
+.logo {
+  width: 6.5em;
 }
 
 .header__ul {
@@ -53,11 +65,10 @@ body {
   gap: 15px;
 }
 
-p {
-  color: red;
-  background-color: aquamarine;
-  /* display: inline; */
-  width: 150px;
+.header__ul li a {
+  font-size: 2.5em;
+  display: flex;
+  align-items: flex-start;
 }
 
 div p {
