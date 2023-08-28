@@ -22,7 +22,7 @@ a {
   width: 60px;
 }
 
-.a-logo {
+.a__logo {
   display: initial;
 }
 
@@ -36,11 +36,11 @@ body {
   font-size: 25px;
 }
 
-.main-header {
+.main__header {
   width: 100vw;
 }
 
-.header-nav {
+.header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +48,7 @@ body {
   background-color: white;
 }
 
-.header-ul {
+.header__ul {
   display: flex;
   gap: 15px;
 }
