@@ -1,21 +1,74 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); */
-
 @font-face {
   font-family: "Pacifico";
   src: url("./fonts/Pacifico-Regular.ttf");
 }
 
-body {
-  color: red;
-  background-color: grey;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  color: #000000;
   font-family: "Tulpen One", cursive;
-  font-size: 25px;
+  background-color: grey;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header,
+footer {
+  color: rgb(88, 175, 204);
+  background-color: white;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }
 
 p {
+  color: red;
   background-color: aquamarine;
-  /* display: inline; */
+  font-size: 2.5em;
   width: 150px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+}
+
+.logo {
+  width: 6.5em;
+}
+
+.header__ul {
+  display: flex;
+  gap: 15px;
+}
+
+.header__ul li a {
+  font-size: 2.5em;
+  display: flex;
+  align-items: flex-start;
 }
 
 div p {
