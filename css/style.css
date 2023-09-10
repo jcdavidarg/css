@@ -4,6 +4,10 @@
   src: url("./fonts/Pacifico-Regular.ttf");
 }
 
+:root {
+  --font-medium: 3.5em;
+}
+
 *,
 *::before,
 *::after {
@@ -25,6 +29,10 @@ a {
   color: inherit;
 }
 
+.header__ul li a:hover {
+  background-color: aquamarine;
+}
+
 header,
 footer {
   color: rgb(88, 175, 204);
@@ -36,17 +44,18 @@ ol {
   list-style-type: none;
 }
 
-p {
+/* p {
   color: red;
   background-color: aquamarine;
   font-size: 2.5em;
   width: 150px;
-}
+} */
 
 main {
   max-width: 1200px;
   margin: 0 auto;
   background-color: lightblue;
+  font-size: var(--font-medium);
 }
 
 .header__nav {
@@ -57,7 +66,7 @@ main {
 }
 
 .logo {
-  width: 6.5em;
+  width: 8rem;
 }
 
 .header__ul {
@@ -66,7 +75,7 @@ main {
 }
 
 .header__ul li a {
-  font-size: 2.5em;
+  font-size: 4em;
   display: flex;
   align-items: flex-start;
 }
@@ -77,4 +86,37 @@ div p {
   display: inline-block;
   width: 180px;
   font-family: "Pacifico";
+}
+
+.caja {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  margin: 10px;
+}
+
+.p__caja {
+  display: block;
+  background-color: inherit;
+  color: white;
+}
+
+.p__caja:active {
+  background-color: chocolate;
+}
+
+#texto:focus {
+  background-color: blueviolet;
+}
+
+#radio:checked {
+  background-color: black;
+}
+
+p:first-child {
+  color: whitesmoke;
+}
+
+p:last-child {
+  color: coral;
 }
