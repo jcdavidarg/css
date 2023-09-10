@@ -113,10 +113,49 @@ div p {
   background-color: black;
 }
 
-p:first-child {
+/* p:first-child {
   color: whitesmoke;
 }
 
 p:last-child {
   color: coral;
+} */
+
+/* .dificil {
+  background-color: blue;
+  color: white;
+  font-size: 1.1em;
+}
+
+.dificil p:nth-child(3n + 5) {
+  color: rgb(230, 197, 13);
+  text-decoration: underline;
+} */
+
+/* Aplicar el pseudoelemento solo a los elementos hijos específicos */
+.hijos:nth-child(3n + 5)::before {
+  content: "✔👟";
+}
+
+/* Estilos para los elementos hijos impares */
+.hijos:nth-child(3n + 5) {
+  color: rgb(230, 197, 13);
+  text-decoration: underline;
+}
+
+.letras::first-letter {
+  font-size: 1.5em;
+  color: rgb(31, 17, 233);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.linea::first-line {
+  color: rgb(31, 17, 233);
+  font-weight: 700;
+}
+
+input::placeholder {
+  color: aqua;
+  background-color: cornflowerblue;
 }
