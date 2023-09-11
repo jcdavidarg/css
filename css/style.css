@@ -52,10 +52,12 @@ ol {
 } */
 
 main {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   background-color: lightblue;
   font-size: var(--font-medium);
+  margin-top: 102px;
 }
 
 .header__nav {
@@ -63,6 +65,8 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -80,13 +84,13 @@ main {
   align-items: flex-start;
 }
 
-div p {
+/* div p {
   color: blue;
   background-color: azure;
   display: inline-block;
   width: 180px;
   font-family: "Pacifico";
-}
+} */
 
 .caja {
   width: 300px;
@@ -158,4 +162,43 @@ p:last-child {
 input::placeholder {
   color: aqua;
   background-color: cornflowerblue;
+}
+
+/* form {
+  margin: 10px;
+  position: relative;
+  bottom: 40px;
+  left: 40px;
+} */
+
+/* .tipo {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+form {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.tipo {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.pegado {
+  position: sticky;
+  top: 350px;
+  background-color: brown;
+  color: azure;
 }
