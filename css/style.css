@@ -14,6 +14,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* border: solid 1px chartreuse; */
 }
 
 html {
@@ -27,6 +28,10 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.header__ul li a {
+  transition: background-color 1s ease-in 0s;
 }
 
 .header__ul li a:hover {
@@ -181,6 +186,7 @@ form {
   position: absolute;
   top: 0px;
   right: 0px;
+  z-index: 1;
 }
 
 .tipo {
@@ -193,7 +199,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .pegado {
@@ -201,4 +207,26 @@ header {
   top: 350px;
   background-color: brown;
   color: azure;
+}
+
+.pegado:active {
+  /* display: none; */
+  position: static;
+}
+
+.cuadro__cajas {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 30px; */
+  margin: 20px;
+}
+
+.cuadro__cajas div {
+  width: 150px;
+  height: 150px;
+  border: solid 4px green;
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
