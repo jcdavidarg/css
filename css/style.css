@@ -195,7 +195,12 @@ form {
   position: relative;
   top: 0;
   left: 0;
+  transition: display 1s ease-in 0s;
 }
+
+/* .tipo:hover {
+  display: none;
+} */
 
 header {
   position: fixed;
@@ -241,18 +246,74 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 30% 30% 20% 20%;
+  justify-items: center;
   align-items: center;
   color: var(--tex-light);
   text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black,
     1px 1px 0px black; /* Sombra de texto negra que simula un borde */
   font-size: 1.5em;
+  padding: 20px;
 }
 
 .flag {
   width: 150px;
+  /* transform: rotate(-45deg);
+  transition: all 2s ease-in 0s; */
+  animation: mover 2s linear infinite;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: flex-start;
+  justify-self: start;
+}
+
+.flag2 {
+  width: 150px;
+  /* transform: rotate(-45deg);
+  transition: all 2s ease-in 0s; */
+  animation: mover 2s linear infinite;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  align-self: flex-start;
+  justify-self: start;
+}
+
+.flag3 {
+  width: 150px;
+  /* transform: rotate(-45deg);
+  transition: all 2s ease-in 0s; */
+  animation: mover 2s linear infinite;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  align-self: flex-end;
+  justify-self: start;
+}
+
+.flag4 {
+  width: 150px;
+  /* transform: rotate(-45deg);
+  transition: all 2s ease-in 0s; */
+  animation: mover 2s linear infinite;
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  align-self: flex-end;
+  justify-self: start;
+}
+
+.banner h1 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.banner p {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
 }
 
 .grid {
@@ -289,4 +350,51 @@ header {
   background-color: aqua;
   justify-self: center;
   align-self: center;
+}
+
+.anuncio {
+  position: absolute;
+  top: 185px;
+  left: 420px;
+  background-color: chocolate;
+  width: 350px;
+  height: 130px;
+  /* transform: translate(100, 300); */
+  display: grid;
+  /* transition: all 2s ease-in 0s;
+  transform: rotate(360deg); */
+  /* transform: skew(20deg, 20deg); */
+  animation: agrandar 5s linear infinite;
+}
+
+.anuncio p {
+  align-self: center;
+  justify-self: center;
+  /* transition: all 2s ease-in 0s; */
+}
+
+@keyframes agrandar {
+  from {
+    width: 350px;
+    height: 130px;
+    background-color: chocolate;
+  }
+
+  to {
+    width: 500px;
+    height: 250px;
+    background-color: blue;
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
 }
