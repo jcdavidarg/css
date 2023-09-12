@@ -261,12 +261,14 @@ header {
   grid-template-rows: 200px 75px;
   grid-gap: 5px;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .item1 {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   background-color: brown;
+  display: grid;
 }
 
 .item2 {
@@ -281,4 +283,10 @@ header {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   background-color: brown;
+}
+
+.item-a {
+  background-color: aqua;
+  justify-self: center;
+  align-self: center;
 }
